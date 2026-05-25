@@ -41,6 +41,7 @@ const COUNTRIES = [
   {code:'GB',name:'United Kingdom', flag:'🇬🇧',cities:['London','Manchester','Birmingham','Edinburgh','Leeds','Bristol','Glasgow']},
   {code:'US',name:'United States',  flag:'🇺🇸',cities:['New York','Los Angeles','Chicago','Houston','Washington DC','Boston','San Francisco','Miami','Atlanta','Dallas']},
   {code:'AU',name:'Australia',      flag:'🇦🇺',cities:['Sydney','Melbourne','Brisbane','Perth','Adelaide']},
+  {code:'CN',name:'China',          flag:'CN',cities:['Beijing','Shanghai']},
   {code:'HK',name:'Hong Kong',      flag:'🇭🇰',cities:['Hong Kong']},
   {code:'MY',name:'Malaysia',       flag:'🇲🇾',cities:['Kuala Lumpur','Penang','Johor Bahru']},
   {code:'AE',name:'UAE',            flag:'🇦🇪',cities:['Dubai','Abu Dhabi']},
@@ -477,7 +478,7 @@ function App() {
                     <div>
                       <label style={{display:'block',fontSize:12,color:'var(--mut)',marginBottom:5,fontFamily:'sans-serif'}}>Number of Firms</label>
                       <select value={params.count} onChange={e => setParams(p=>({...p,count:+e.target.value}))} style={{width:'100%',padding:'9px 10px',borderRadius:7,border:'0.5px solid var(--bord)',fontSize:13,background:'var(--surf)',color:'var(--tx)',fontFamily:'sans-serif'}}>
-                        {[5,8,10,12].map(n => <option key={n} value={n}>{n} firms</option>)}
+                        {[10,30,50,80,100,150,200].map(n => <option key={n} value={n}>{n} firms</option>)}
                       </select>
                     </div>
                   </div>
