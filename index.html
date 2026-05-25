@@ -96,7 +96,7 @@ function fillTemplate(tpl, data) {
     .replace(/{senderPhone}/g,   data.senderPhone   || '[Your Phone]');
 }
 
-/* ── Simulated firm generator ── */
+/* ── Simulated firm generator ── 
 const FIRM_PREFIXES = [
   'Allen & Overy','Baker McKenzie','Clifford Chance','Dentons','Eversheds Sutherland',
   'Freshfields','Gibson Dunn','Herbert Smith Freehills','Jones Day','King & Wood Mallesons',
@@ -155,7 +155,8 @@ function generateFirms(country, city, practiceArea, count) {
     };
   });
 }
-
+*/
+  
 /* ── Small components ── */
 function Avatar({name, size=36}) {
   const letters = (name||'?').split(' ').map(w=>w[0]).slice(0,2).join('').toUpperCase();
